@@ -197,7 +197,7 @@ SLIDE 11, Find the 9s (Do-While Loop)
 
         } while (num <= 200); //number until 200
         //character output
-        cout << "\nThe sum of integers between 0 and 200 divisible by 9 is: " << sum << endl;
+        cout << "\nSum: " << sum << endl;
 
         return 0;
     }
