@@ -177,26 +177,29 @@ SLIDE 11, Find the 9s (Do-While Loop)
     
     #include <iostream>
     using namespace std;
-    
+
     int main()
     {
         //variables
-        int numint = 0;
         int sum = 0;
-        int num = 1;
+        int num = 100;
+
+        cout << "The integers between 0 till 200 that are divisible by 9 are:" << endl; //character output
 
         do
         {
             if (num % 9 == 0) //number divisible by 9
             {
-                numint = numint + 1; //increment the number of integers by 1
-                sum = sum + num; //increment the sum of the integers by the number
+                cout << num << endl;
+                sum = sum + num; //formula for total
             }
-            num = num + 1;
+            num++;
+
         } while (num <= 200); //number until 200
-        //character outputs
-        cout << "\nThe number of integers between 0 and 200 that is divisible by 9 are: " << numint << endl;
-        cout << "\nThe sum of integers between 0 and 200 divisible by 9 is " << sum << endl;
+        //character output
+        cout << "\nThe sum of integers between 0 and 200 divisible by 9 is: " << sum << endl;
+
+        return 0;
     }
     
 
